@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Galamba já se demitiu?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 24px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>O Galamba já se demitiu?</h1>
+    <h2 id="resultado">Carregue no botão para verificar</h2>
+    <button onclick="verificarDemissao()">Verificar</button>
+
+    <script>
+        const DEMITIU = false; // Atualize esta variável para 'true' quando o Galamba se demitir
+
+        function verificarDemissao() {
+            const resultado = document.getElementById("resultado");
+            if (DEMITIU) {
+                resultado.innerHTML = "Sim, o Galamba demitiu-se.";
+            } else {
+                resultado.innerHTML = "Não, o Galamba ainda não se demitiu.";
+            }
+        }
+    </script>
+</body>
+</html>
