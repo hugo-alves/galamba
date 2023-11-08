@@ -52,12 +52,12 @@
     <button onclick="verificarDemissao()">Verificar</button>
 
     <script>
-        const DEMITIU = false; // Atualize esta variável para 'true' quando o Galamba se demitir
+        const DEMITIU = true; // Atualize esta variável para 'true' quando o Galamba se demitir
 
         function verificarDemissao() {
             const resultado = document.getElementById("resultado");
             if (DEMITIU) {
-                resultado.innerHTML = "Sim, o Galamba foi de conas.";
+                resultado.innerHTML = "Sim, o Galamba foi de conas.E até levou o Costa pelo caminho";
             } else {
                 resultado.innerHTML = "Não, o Galamba ainda não foi de conas. O Costa decidiu 'calling your bluff Marcelo'. E talvez o Marcelo tenha perdido a paciência.";
             }
